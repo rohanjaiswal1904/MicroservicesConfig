@@ -1,1 +1,17 @@
+spring:
+  application:
+    name: CONFIG-DEV
 
+
+eureka:
+  instance:
+#  agar hostname decalare kr diya hai to server k ip address ka use karega
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaulzone:  http://localhost:8761/eureka
+#   yeh dono properties by defaut bhi true hi rehti hai
+    fetch-registry: true
+    register-with-eureka: true
+    
+ 
